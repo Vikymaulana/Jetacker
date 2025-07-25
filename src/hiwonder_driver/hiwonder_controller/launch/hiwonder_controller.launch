@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<launch>
+    <arg name="machine_type"    default="$(env MACHINE_TYPE)"/>
+    <node name="hiwonder_controller" pkg="hiwonder_controller" type="hiwonder_controller_main.py" required="true" output="screen" >
+        <rosparam file="$(find hiwonder_controller)/config/calibrate_params.yaml" command="load"/>
+        <param name="machine_type"  value="$(arg machine_type)"/>
+    </node>
+</launch>

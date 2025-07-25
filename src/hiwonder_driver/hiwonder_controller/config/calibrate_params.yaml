@@ -1,0 +1,12 @@
+linear_correction_factor: 1.00
+angular_correction_factor: 1.00
+go_factor: 1.00 # 0.92
+turn_factor: 1.0 # 0.93
+#linear_correction_factor: 1.00
+#angular_correction_factor: 1.03
+#mecanum:
+#    go_factor: 0.90
+#    turn_factor: 0.93
+#tank:
+#    go_factor: 1.65
+#    turn_factor: 0.92
